@@ -12,13 +12,13 @@ let highScore = localStorage.getItem("highScore") || 0;
 highScoreText.innerText = "High Score: " + highScore;
 
 // Load assets
-const bg = new Image(); bg.src = "assets/bg.png";
-const playerImg = new Image(); playerImg.src = "assets/player.png";
-const pipeImg = new Image(); pipeImg.src = "assets/pipe.png";
+const bg = new Image(); bg.src = "COP padaku/assets/bg.png";
+const playerImg = new Image(); playerImg.src = "COP padaku/assets/player.png";
+const pipeImg = new Image(); pipeImg.src = "COP padaku/assets/pipe.png";
 
-const jumpSound = new Audio("assets/jump.mp3");
-const hitSound = new Audio("assets/hit.mp3");
-const scoreSound = new Audio("assets/score.mp3");
+const jumpSound = new Audio("COP padaku/assets/jump.mp3");
+const hitSound = new Audio("COP padaku/assets/hit.mp3");
+const scoreSound = new Audio("COP padaku/assets/score.mp3");
 
 let player, pipes, frame, score, speed, gameRunning;
 
@@ -139,4 +139,5 @@ function endGame() {
   ui.style.display = "block";
   highScoreText.innerText = "High Score: " + highScore;
   startBtn.innerText = "Restart Game";
+
 }
